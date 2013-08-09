@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="content">
+  <div class="related">
+    <ul>
+      {% for post in site.posts %}
+      <li class="post">
+        <div class="post-header">
+          <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+        </div>
+        <div class="image-container">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img width="700" height="80" src="img/{{ post.image || image: "default.jpg" }}" />
+          </a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
