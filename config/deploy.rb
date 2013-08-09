@@ -2,7 +2,8 @@ set :application, "byben"
 set :repository,  "git@github.com:benrudolph/main.git"
 set :scm, :git
 set :deploy_via, :copy
-require '/Users/benrudolph/Dropbox/credentials/capcreds.rb'
+set :user, :root
+require '/Users/benrudolph/Dropbox/credientials/capcreds.rb'
 set :deploy_to, "/var/www/#{application}"
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
