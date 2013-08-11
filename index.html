@@ -3,20 +3,23 @@ layout: default
 ---
 
 <div class="content">
-  <div class="related">
-    <ul>
-      {% for post in site.posts %}
-      <li class="post">
-        <div class="post-header">
-          <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
-        </div>
-        <div class="image-container">
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            <img width="700" height="80" src="img/{{ post.image || image: "default.jpg" }}" />
-          </a>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
+  <div class="container">
+    <div class="portrait-container">
+      <img src="/img/ben.jpg" width="200" height="200" class="portrait"/>
+    </div>
+    <div class="about">
+      <h1 class="about-heading">Hi, I'm Ben Rudolph</h1>
+      <div class="about-content">I'm a data enthusiast coming from the homey state of Illinois. I went to
+  school at Stanford University and studied computer science. My passion
+  lies in the intersection of software and humanitarian response. I currently
+  work at UNCHR Innovation to bring cool ideas to refugee situations. Feel
+  free to shoot me an email at rudolphben at gmail dot com.</div>
+    </div>
   </div>
+  <div class="links">
+    <a href="http://travel.byben.org">Travel</a>
+    <a href="http://photos.byben.org">Photos</a>
+    <a href="http://data.byben.org">Data</a>
+    <a href="http://visualizations.byben.org">Visualizations</a>
+  </div>
+</div>

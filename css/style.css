@@ -2,10 +2,9 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "PT Sans", sans-serif;
   background: #fafcff;
-  color: black;
+  color: #222;
   padding: 0;
-  margin-left: 100px;
-  margin-top: 30px;
+  margin-top: 180px;
 }
 ul {
   margin: 0;
@@ -30,91 +29,47 @@ h1 {
   font-size: 56px;
   font-weight: 300;
   margin: 0px;
-  text-shadow: 1px 1px 2px black
 }
 
-.post {
-  width: 700px;
+.content {
+  width: 800px;
+  margin: 0 auto;
+  background: #fafcff;
 }
 
-.post-header .title {
+.portrait-container {
+  float: left;
+  background: #fafcff;
+}
+.portrait-container img {
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+
+.about {
+  float: left;
+  width: 570px;
+  padding-left: 20px;
+}
+
+.links {
+  float: left;
+  text-align: center;
+  width: 800px;
+  margin: 60px 0;
+}
+
+.container {
+  clear: both;
   float: left;
 }
 
-.post-header .date {
-  float: right;
+.links a {
+  border-left: 1px solid #222;
+  padding: 0 5px 0 8px;
 }
 
-iframe {
-  border: 1px solid #d8d7d9;
-}
-
-p {
-  max-width: 600px;
-  padding-left: 30px;
-  border-left: 3px solid #d8d7d9;
-}
-
-.post {
-  margin-top: 35px;
-}
-
-.image-container img {
-  border: 1px solid #d8d7d9;
-}
-
-.header {
-  width: 900px;
-  margin-bottom: 20px;
-}
-
-.header > .source {
-  float: right;
-  margin-top: -20px;
-}
-
-.logo {
-  padding-right: 25px;
-  margin-right: 25px;
-  border-right: 3px solid black;
-}
-
-i.facebook {
-  background: url('../img/facebook.png') ;
-  background-size: 25px 25px;
-}
-
-footer {
-  position: fixed;
-  bottom: 0px;
-  background-color: white;
-  width: 100%;
-  margin-left: -100px;
-  padding-left: 100px;
-  border-top: 1px solid #d8d7d9;
-}
-
-footer ul {
-  white-space: nowrap;
-}
-
-footer li {
-  float: left;
-  margin: 7px;
-}
-
-i.google {
-  background: url('../img/google.png');
-  background-size: 25px 25px;
-}
-
-i.twitter {
-  background: url('../img/twitter.png');
-  background-size: 25px 25px;
-}
-
-i {
-  display: block;
-  width: 25px;
-  height: 25px;
+.links a:first-child {
+  border-left: none;
 }
