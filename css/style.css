@@ -66,10 +66,21 @@ h1 {
 }
 
 .links a {
-  border-left: 1px solid #222;
-  padding: 0 5px 0 8px;
+  padding: 0 7px 0 5px;
+  position: relative;
 }
 
-.links a:first-child {
-  border-left: none;
+i.coming-soon {
+  background-image: url('/img/comingsoon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(25deg)
 }
