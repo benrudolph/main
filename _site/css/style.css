@@ -38,6 +38,7 @@ h1 {
 }
 
 .portrait-container {
+  margin-top: 12px;
   float: left;
   background: #fafcff;
 }
