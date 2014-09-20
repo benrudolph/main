@@ -1,10 +1,10 @@
-set :application, "byben"
+set :application, "benrudolph"
 set :repository,  "git@github.com:benrudolph/main.git"
 set :scm, :git
 set :deploy_via, :copy
-set :user, :root
-require '/Users/benrudolph/Dropbox/credientials/capcreds.rb'
+set :user, :deploy
 set :deploy_to, "/var/www/#{application}"
+default_run_options[:pty] = true
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
