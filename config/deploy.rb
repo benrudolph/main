@@ -22,9 +22,10 @@ set :ssh_options, { :forward_agent => true }
 
 namespace :jekyll do
   task :generate, :roles => :blog do
-    run "cd #{release_path} && bundle exec jekyll build"
+    run "cd /var/www/#{application}/current && bundle exec jekyll build"
   end
 end
 
 after 'deploy:update_code', 'deploy:cleanup'
-after 'bundle:install', 'jekyll:generate'
+after 'deploy:update_code', 'bundle:install'
+after 'deploy:create_symlink', 'jekyll:generate'
