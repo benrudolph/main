@@ -27,5 +27,4 @@ namespace :jekyll do
 end
 
 after 'deploy:update_code', 'deploy:cleanup'
-after 'deploy:update_code', 'bundle:install'
 after 'deploy:create_symlink', 'jekyll:generate'
