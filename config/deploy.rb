@@ -1,5 +1,5 @@
 set :application, "benrudolph"
-set :repository,  "git@github.com:benrudolph/main.git"
+set :repository,  "https://github.com/benrudolph/main.git"
 set :scm, :git
 set :deploy_via, :remote_cache
 set :user, :deploy
@@ -13,7 +13,7 @@ default_run_options[:pty] = true
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :blog, "personal"
+role :blog, "p2"
 
 set :ssh_options, { :forward_agent => true }
 
