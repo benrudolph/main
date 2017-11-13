@@ -80,6 +80,11 @@ h1 {
   position: relative;
 }
 
+.project {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .project-image {
   border: 1px solid #666;
   background-size: cover;
@@ -89,6 +94,11 @@ h1 {
 
 .project-image.thingsonreddit {
   background-image: url('https://i.imgur.com/aD42FFJ.png');
+}
+
+.project-image.axis {
+  background-size: contain;
+  background-image: url('https://i.imgur.com/ySFQBqT.png');
 }
 
 i.coming-soon {
