@@ -96,6 +96,11 @@ h1 {
   background-image: url('https://i.imgur.com/aD42FFJ.png');
 }
 
+.project-image.baar {
+  background-image: url('https://i.imgur.com/W7eKaIG.png');
+  background-position: center;
+}
+
 .project-image.axis {
   background-size: contain;
   background-image: url('https://i.imgur.com/ySFQBqT.png');
