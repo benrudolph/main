@@ -6,4 +6,4 @@ group :development do
 end
 
 gem 'jekyll', '~> 3.6.3'
-gem 'rake', '~> 10.3.2'
+gem 'rake', '~> 12.3.3'
