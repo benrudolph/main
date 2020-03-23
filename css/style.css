@@ -53,6 +53,18 @@ h1 {
   text-align: center;
   background: #fafcff;
 }
+.portrait-container .portrait-ben {
+  display: unset;
+}
+.portrait-container:hover .portrait-ben {
+  display: none;
+}
+.portrait-container .portrait-flip {
+  display: none;
+}
+.portrait-container:hover .portrait-flip {
+  display: unset;
+}
 .portrait-container img {
   border-radius: 100px;
   -moz-border-radius: 100px;
